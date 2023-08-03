@@ -39,7 +39,7 @@ function getCity(coordinates) {
 	var lng = coordinates[1]; 
 
 	// Paste your LocationIQ token below. 
-	xhr.open('GET', "https://us1.locationiq.com/v1/reverse.php?key=pk.abde77886487302d6bb71ddd12e95d8d&lat=" + 
+	xhr.open('GET', "https://us1.locationiq.com/v1/reverse.php?" + 
 	lat + "&lon=" + lng + "&format=json", true); 
 	xhr.send(); 
 	xhr.onreadystatechange = processRequest; 
